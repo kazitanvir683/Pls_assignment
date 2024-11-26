@@ -76,7 +76,16 @@ void withdraw(double *balance) {
  *balance -= amount; 
  printf("Withdrew $%.2lf. Your new balance is: $%.2lf\n", amount, *balance);  } 
 } 
+
+
+
+
+
+
 Javascript Program: 
+
+
+
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
