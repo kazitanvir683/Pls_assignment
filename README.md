@@ -13,30 +13,55 @@ C Program:
 void checkBalance(double balance); 
 
 void deposit(double *balance); 
+
 void withdraw(double *balance); 
+
 int main() { 
+
  double balance = 0.0; // Initial balance 
+ 
  int choice; 
+ 
  int pin = 1234; // Hardcoded PIN for simplicity 
+ 
  int enteredPin; 
+ 
  // ATM System: PIN Verification 
+ 
  printf("Enter your PIN: "); 
- scanf("%d", &enteredPin); 
+ 
+ scanf("%d", &enteredPin);
+ 
  if (enteredPin != pin) { 
- printf("Incorrect PIN. Access Denied.\n"); 
+ 
+ printf("Incorrect PIN. Access Denied.\n");
+ 
  return 0; // Exit the program if PIN is incorrect 
+ 
  } 
+ 
  // ATM Menu
+ 
  do { 
- printf("\n*** ATM Menu ***\n"); 
+ 
+ printf("\n*** ATM Menu ***\n");
+ 
  printf("1. Check Balance\n"); 
+ 
  printf("2. Deposit Money\n"); 
+ 
  printf("3. Withdraw Money\n"); 
+ 
  printf("4. Exit\n"); 
+ 
  printf("Please select an option (1-4): "); 
+ 
  scanf("%d", &choice); 
+ 
  switch (choice) { 
+ 
  case 1: 
+ 
  checkBalance(balance); 
  break; 
  case 2: 
