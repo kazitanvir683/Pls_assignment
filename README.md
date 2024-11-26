@@ -7,8 +7,11 @@ C Program:
 
 
 #include <stdio.h> 
+
 // Function declarations 
+
 void checkBalance(double balance); 
+
 void deposit(double *balance); 
 void withdraw(double *balance); 
 int main() { 
